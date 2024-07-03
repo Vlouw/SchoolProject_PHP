@@ -1,0 +1,571 @@
+/* 
+Music and images ©Nintendo
+Taken from : https://spritedatabase.net/
+*/
+
+/*   
+Projet - Web3
+Henri-Paul Bolduc
+global.css
+
+Mise en page du site web
+*/
+
+
+/* -------------- CSS Global -------------- */
+* {
+    margin:0;
+    padding:0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+
+input{
+    text-align: center;
+    color: white;
+    border: solid rgb(77, 160, 0) 1px;
+    background-color: black;    
+ }
+
+.api-message {
+    color:white;
+    text-align: center;
+}
+
+.input-block {
+    border: solid rgb(77, 160, 0) 2px;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-button {
+    width: 100%;    
+    background-color: rgb(77, 160, 0);
+    border: none;
+}
+
+.center-button:hover {  
+    color: white;
+}
+
+.animation-block {
+    width: 1280px;
+    height: 720px;
+    overflow: hidden;
+    position: relative;
+}
+
+.audio {
+    margin: 5px 490px;
+    color: rgb(77, 160, 0);
+}
+/* ----------------------------------------- */
+
+/* --------------- CSS Index --------------- */
+#input-block-index {
+    margin: 100px 540px;
+    width: 200px;
+    height: 110px; 
+}
+
+#animation-block-index {
+    background-image: url(../img/MM_Index_Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#megaman {
+    position: absolute;
+}
+/* ---------------------------------------- */
+
+/* --------------- CSS Accueil --------------- */
+#input-block-accueil {
+    margin: 10px 535px;
+    width: 200px;
+    height: 110px;
+}
+
+#animation-block-accueil {
+    background-image: url(../img/MM_Accueil_Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#iframe-accueil {
+    margin: 10px 285px;
+    width:700px;
+    height:240px;
+}
+
+#waveman, #napalmman, #crystalman, #gravityman {
+    position: absolute;
+}
+/* ---------------------------------------- */
+
+/* --------------- CSS Jeu --------------- */
+#animation-block-jeu {
+    background-image: url(../img/jeu_Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#bar-ennemi {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#bar-ennemi-gauche {
+    height: 100px;
+    width: 565px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+}
+
+#frame-ennemi {
+    height: 150px;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+#bar-ennemi-droite {
+    height: 100px;
+    width: 565px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.carte {
+    height: 60px;
+    width: 40px;
+    background-image: url(../img/carte.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 5px;
+}
+
+.mana {
+    height: 60px;
+    width: 60px;
+    background-image: url(../img/mana.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 5px;
+}
+
+#ennemi {
+    width:114px;
+}
+
+.vie {
+    width:36px;
+    background-image: url(../img/vie.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.vie-texte {
+    text-align: center; 
+    font-size: 25px;   
+}
+
+#vie-ennemi {
+    margin-top: 115px;
+}
+
+#vie-perso {
+    margin-top: 135px;
+}
+
+.carte-restante-texte, .mana-texte {
+    color: red;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 25px;   
+}
+
+.infos {
+    color:white;
+    font-size: 25px;
+    margin-left: 10px; 
+    text-align: center;
+    width: 150px;
+}
+
+#iframe-jeu {
+    margin: 10px;
+    flex: 1;
+    height:360px;
+}
+
+#jeu-centre {
+    height: 380px;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+#jeu-carte  {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+#jeu-carte-ennemi, #jeu-carte-joueur, #jeu-carte-perso {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#bar-joueur {
+    height: 190px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#input-block-jeu {
+    height: 180px;
+    width: 100px;
+    padding-left: 10px;;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.jeu-button {
+    width: 100%;   
+    height: 20px; 
+    background-color: rgb(77, 160, 0);
+    border: none;
+    font-size: 12px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.jeu-button:hover {  
+    color: white;
+}
+
+#vie-perso-div {
+    height: 180px;
+    width: 43px;
+    margin: 0 10px 0 10px;
+}
+
+#mana-carte-perso {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#temps-restant {
+    color:white;
+    font-size: 35px;
+    text-align: center;
+}
+
+#jeu-msg {
+    position: absolute;
+    width : 400px;
+    min-height: 200px;    
+    top: 125px;
+    left: 300px;
+
+    background-image: url(../img/msg-bubble.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#jeu-msg-texte {
+    word-wrap: break-word;
+    width : 300px;
+    text-align: center;
+}
+
+#jeu-msg-texte {
+    word-wrap: break-word;
+    width : 300px;
+    text-align: center;
+}
+
+#jeu-fin {
+    position: absolute;
+    width : 1280px;
+    height: 720px;    
+    top: 0px;
+    left: 0px;
+
+    background-image: url(../img/victoire.png);
+    background-repeat: repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#jeu-fin-texte {
+    font-size : 200px;
+    color:black;
+    padding-bottom: 60px;
+}
+/* ---------------------------------------- */
+
+/* --------------- CSS Carte --------------- */
+
+.carte-jouable {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+
+    background-color: rgb(0, 0, 0);
+    border: solid rgb(77, 160, 0) 2px;
+
+    height: 150px;
+    width: 100px;
+    margin: 5px;
+}
+
+.carte-mana-vie {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+
+    flex: 1;
+}
+
+.carte-image-texte-attack {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+
+    flex:3;
+}
+
+.carte-mana {
+    background-image: url(../img/mana.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    flex: 1;
+}
+
+.carte-mana-texte {
+    text-align: center;
+    margin-top: 3px; 
+}
+
+.carte-vie {
+    background-image: url(../img/vie.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin:1px;
+
+    flex: 4;
+}
+
+.carte-vie-texte {
+    text-align: center;
+    margin-top: 72.5px; 
+}
+
+.carte-att {
+    background-image: url(../img/att.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    flex: 1;
+}
+
+.carte-att-texte {
+    text-align: center;
+    margin-top: 3px; 
+}
+
+.carte-image {
+    flex: 1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.carte-texte {
+    color:white;
+    font-size: 10px;
+    word-wrap: break-word;
+    text-align: center;
+
+    flex: 1;
+}
+
+.chat-entry {
+    background-color: rgb(255, 0, 0);
+}
+/* ---------------------------------------- */
+
+/* --------------- CSS Guide --------------- */
+#guide-block {
+    width: 1280px;
+
+    background-image: url(../img/NintendoPower.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset {
+    margin: 10px;
+    width: 1270px;
+}
+
+legend {
+    font-size: 30px;
+}
+
+.input-block-guide {
+    border: solid rgb(77, 160, 0) 2px;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 300px;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-button-guide {
+    width: 50%;    
+    background-color: rgb(77, 160, 0);
+    color: black;
+    border: none;
+
+    margin-left: 10px;
+}
+
+.center-button-guide:hover {  
+    color: white;
+}
+
+.article-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.article-block-titre {
+    display: flex;
+    flex-direction: row;
+
+    width: 1000px;
+}
+
+#article-titre {
+    height: 20px;
+}
+
+#article-texte {
+    height: 400px;
+    overflow-y: scroll;
+}
+
+#article-commentaire {
+    height: 400px;
+    overflow-y: scroll;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: 0;
+}
+
+.article-texte {
+    border: solid rgb(77, 160, 0) 2px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    width: 996px;    
+
+    display: flex;
+    flex-direction: column;
+}
+
+.article-block-texte-commentaire {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 1280px;
+}
+
+.article-block-commentaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 280px;
+}
+
+#article-commentaire-new{
+    width: 280px;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+#ajouter-commentaire {
+    height: 24px;
+}
+
+/* ---------------------------------------- */

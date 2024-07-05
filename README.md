@@ -1,5 +1,9 @@
 # Magix
 
+Création de l'interface pour un jeu du style Magic The Gathering.
+Connection au API / Backend avec des requêtes AJAX.
+
+-----------------------
 Henri-Paul Bolduc
 0240054
 
